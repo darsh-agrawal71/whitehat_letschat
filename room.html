@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lets Chat Room</title>
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+        <link
+            href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap"
+            rel="stylesheet"
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"
+        />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <button
+                id="logout"
+                class="glyphicon glyphicon-log-out btn btn-primary"
+            >
+                Logout
+            </button>
+            <center>
+                <h1 class="header">
+                    Lets Chat
+                    <sup>
+                        <div class="img-container">
+                            <img src="img/m2.png" />
+                        </div>
+                    </sup>
+                </h1>
+                <h2 class="color_white">Welcome, <b><em id="greet">Darsh</em></b> !!</h2>
+                <form class="form-group input_div_room_page" id="addRoomForm"> 
+                    <h2><strong>Add Room:</strong></h2
+                    ><input type="text" class="form-control" name="roomName"/>
+                    <button type="submit" class="btn btn-warning float-right">Add room</button>
+                    </form>
+                <h3 class="color_white">#TRENDINGROOMS</h3>
+                <div class="chat-rooms"></div>
+            </center>
+        </div>
+        <script src="js/room.js" type="module"></script>
+    </body>
+</html>
